@@ -1,134 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="56dp"
     android:orientation="vertical"
+    tools:context=".ui.dashboard.DashboardFragment">
     >
 
-    <ImageView
-        android:id="@+id/top_image"
-        android:layout_marginTop="20dp"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logobrain"
-        />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginHorizontal="75dp"
-        >
-
-        <TextView
-            android:layout_marginTop="35dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/question"
-            android:textColor="@color/preguntas"
-            android:textStyle="italic"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorPrimaryDark"
-            android:hint="@string/hint"
-            />
-
-        <TextView
-            android:layout_marginVertical="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/question2"
-            android:textColor="@color/preguntas"
-            android:textStyle="italic"
-            />
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginRight="70dp"
+            android:layout_marginHorizontal="70dp"
             >
 
-            <CheckBox
+            <ImageView
+                android:id="@+id/top_image"
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layoutDirection="rtl"
-                android:text="@string/monday"
-                android:buttonTint="@color/colorPrimaryDark"
+                android:src="@drawable/logobrain"
                 />
 
-            <CheckBox
+            <TextView
+                android:layout_marginTop="35dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layoutDirection="rtl"
-                android:text="@string/tuesday"
-                android:buttonTint="@color/colorPrimaryDark"
+                android:text="@string/question1"
+                android:textColor="@color/preguntas"
+                android:textStyle="italic"
+                android:textSize="16sp"/>
                 />
 
-            <CheckBox
+            <EditText
+                android:id="@+id/et_task"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layoutDirection="rtl"
-                android:text="@string/wednesday"
-                android:buttonTint="@color/colorPrimaryDark"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="@string/hint"
                 />
 
-            <CheckBox
+            <TextView
+                android:layout_marginVertical="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layoutDirection="rtl"
-                android:text="@string/thursday"
-                android:buttonTint="@color/colorPrimaryDark"
+                android:text="@string/question2"
+                android:textColor="@color/preguntas"
+                android:textStyle="italic"
+                android:textSize="16sp"/>
                 />
 
-            <CheckBox
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layoutDirection="rtl"
-                android:text="@string/friday"
-                android:buttonTint="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                android:layout_marginRight="70dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/checkMonday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:text="@string/monday"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:textSize="16sp"/>
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkTuesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:text="@string/tuesday"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:textSize="16sp"/>
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkWednesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:text="@string/wednesday"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:textSize="16sp"/>
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkThursday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:text="@string/thursday"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:textSize="16sp"/>
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkFriday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:text="@string/friday"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:textSize="16sp"/>
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkSatuday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:text="@string/saturday"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:textSize="16sp"/>
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkSunday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:text="@string/sunday"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:textSize="16sp"/>
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question3"
+                android:textColor="@color/preguntas"
+                android:textStyle="italic"
+                android:textSize="16sp"/>
                 />
 
-            <CheckBox
+            <Button
+                android:id="@+id/btn_time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layoutDirection="rtl"
-                android:text="@string/saturday"
-                android:buttonTint="@color/colorPrimaryDark"
+                android:text="@string/hint2"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/gray"
+                android:background="?android:attr/selectableItemBackground"
                 />
 
-            <CheckBox
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layoutDirection="rtl"
-                android:text="@string/sunday"
-                android:buttonTint="@color/colorPrimaryDark"
+                android:background="@color/colorAccent"
+                android:textColor="@color/white"
+                android:text="DONE"
                 />
 
         </LinearLayout>
 
-        <TextView
-            android:layout_marginTop="30dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/question3"
-            android:textColor="@color/preguntas"
-            android:textStyle="italic"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorPrimaryDark"
-            android:inputType="number"
-            android:hint="@string/hint2"
-
-            />
-
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
